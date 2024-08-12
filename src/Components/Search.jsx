@@ -42,7 +42,7 @@ const Search = () => {
     setLoading(true);
 
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(
+      `https://api.openweathermap.org/geo/1.0/direct?q=${encodeURIComponent(
         debounced
       )}&limit=5&appid=${import.meta.env.VITE_API_KEY}`
     )
